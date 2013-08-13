@@ -18,6 +18,8 @@
 }
 
 - (NSMutableArray*) getAllUtenti;
+- (BOOL) updateNameUtente : (NSString*) name widthID : (int) IDUtente;
+- (BOOL) insertUtenteWidthName : (NSString*) name widthSurname : (NSString*) surname;
 - (void) closeDatabase;
 - (void)initializeDatabase;
 

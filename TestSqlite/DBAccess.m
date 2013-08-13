@@ -56,6 +56,53 @@ sqlite3* database;
     }
 }
 
+- (BOOL) insertUtenteWidthName : (NSString*) name widthSurname : (NSString*) surname
+{
+    const char *sql = "INSERT INTO utente (nome, cognome) values (?,?)";
+    
+    sqlite3_stmt *statement;
+    
+    int sqlResult = sqlite3_prepare_v2(database, sql, -1, &statement, NULL);
+    
+    if( sqlResult == SQLITE_OK ) {
+        // bind the value
+        sqlite3_bind_text(statement, 2, [surname UTF8String], strlen([surname UTF8String]), 0);
+        sqlite3_bind_text(statement, 1, [name UTF8String], strlen([name UTF8String]), 0);
+        
+        // commit
+        sqlite3_step(statement);
+        sqlite3_finalize(statement);
+        
+        return true;
+    }
+    
+    return false;
+    
+}
+
+- (BOOL) updateNameUtente : (NSString*) name widthID : (int) IDUtente
+{
+    const char *sql = "UPDATE utente set nome = ? where id = ?";
+    
+    sqlite3_stmt *statement;
+    
+    int sqlResult = sqlite3_prepare_v2(database, sql, -1, &statement, NULL);
+    
+    if( sqlResult == SQLITE_OK ) {
+        // bind the value
+        sqlite3_bind_int(statement, 2, IDUtente);
+        sqlite3_bind_text(statement, 1, [name UTF8String], strlen([name UTF8String]), 0);
+        
+        // commit
+        sqlite3_step(statement);
+        sqlite3_finalize(statement);
+        
+        return true;
+    }
+
+    return false;
+}
+
 - (NSMutableArray*) getAllUtenti
 {
     //  The array of products that we will create

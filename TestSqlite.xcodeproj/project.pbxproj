@@ -10,18 +10,18 @@
 		EE37622117B8DB390027EAE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE37622017B8DB390027EAE8 /* UIKit.framework */; };
 		EE37622317B8DB390027EAE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE37622217B8DB390027EAE8 /* Foundation.framework */; };
 		EE37622517B8DB390027EAE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE37622417B8DB390027EAE8 /* CoreGraphics.framework */; };
-		EE37622B17B8DB390027EAE8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE37622917B8DB390027EAE8 /* InfoPlist.strings */; };
 		EE37622D17B8DB390027EAE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE37622C17B8DB390027EAE8 /* main.m */; };
 		EE37623117B8DB390027EAE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE37623017B8DB390027EAE8 /* AppDelegate.m */; };
 		EE37623317B8DB3A0027EAE8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EE37623217B8DB3A0027EAE8 /* Default.png */; };
 		EE37623517B8DB3A0027EAE8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE37623417B8DB3A0027EAE8 /* Default@2x.png */; };
 		EE37623717B8DB3A0027EAE8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE37623617B8DB3A0027EAE8 /* Default-568h@2x.png */; };
 		EE37624617B8DC0F0027EAE8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE37624417B8DC0F0027EAE8 /* FirstViewController.m */; };
-		EE37624717B8DC0F0027EAE8 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE37624517B8DC0F0027EAE8 /* FirstViewController.xib */; };
 		EE37624B17B8DD820027EAE8 /* DBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = EE37624A17B8DD820027EAE8 /* DBAccess.m */; };
 		EE37624D17B8DDDE0027EAE8 /* testgiu.db in Resources */ = {isa = PBXBuildFile; fileRef = EE37624C17B8DDDE0027EAE8 /* testgiu.db */; };
 		EE37625017B8DE200027EAE8 /* Utente.m in Sources */ = {isa = PBXBuildFile; fileRef = EE37624F17B8DE1F0027EAE8 /* Utente.m */; };
 		EE37625217B8E3320027EAE8 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE37625117B8E3320027EAE8 /* libsqlite3.0.dylib */; };
+		EEEA616517B91DCD0016DE4E /* FormInsertUtenteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA616417B91DCD0016DE4E /* FormInsertUtenteViewController.m */; };
+		EEEA617217B9364A0016DE4E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEEA617417B9364A0016DE4E /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,6 @@
 		EE37622217B8DB390027EAE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EE37622417B8DB390027EAE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EE37622817B8DB390027EAE8 /* TestSqlite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestSqlite-Info.plist"; sourceTree = "<group>"; };
-		EE37622A17B8DB390027EAE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EE37622C17B8DB390027EAE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE37622E17B8DB390027EAE8 /* TestSqlite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestSqlite-Prefix.pch"; sourceTree = "<group>"; };
 		EE37622F17B8DB390027EAE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,13 +39,16 @@
 		EE37623617B8DB3A0027EAE8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EE37624317B8DC0F0027EAE8 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		EE37624417B8DC0F0027EAE8 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		EE37624517B8DC0F0027EAE8 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 		EE37624917B8DD820027EAE8 /* DBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAccess.h; sourceTree = "<group>"; };
 		EE37624A17B8DD820027EAE8 /* DBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAccess.m; sourceTree = "<group>"; };
 		EE37624C17B8DDDE0027EAE8 /* testgiu.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = testgiu.db; sourceTree = "<group>"; };
 		EE37624E17B8DE1F0027EAE8 /* Utente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utente.h; sourceTree = "<group>"; };
 		EE37624F17B8DE1F0027EAE8 /* Utente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utente.m; sourceTree = "<group>"; };
 		EE37625117B8E3320027EAE8 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		EEEA616317B91DCD0016DE4E /* FormInsertUtenteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormInsertUtenteViewController.h; sourceTree = "<group>"; };
+		EEEA616417B91DCD0016DE4E /* FormInsertUtenteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormInsertUtenteViewController.m; sourceTree = "<group>"; };
+		EEEA617317B9364A0016DE4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EEEA617517B936520016DE4E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,13 +97,11 @@
 		EE37622617B8DB390027EAE8 /* TestSqlite */ = {
 			isa = PBXGroup;
 			children = (
+				EEEA616117B91D9B0016DE4E /* Controller */,
 				EE37624817B8DD5E0027EAE8 /* DB */,
 				EE37622F17B8DB390027EAE8 /* AppDelegate.h */,
 				EE37623017B8DB390027EAE8 /* AppDelegate.m */,
 				EE37622717B8DB390027EAE8 /* Supporting Files */,
-				EE37624317B8DC0F0027EAE8 /* FirstViewController.h */,
-				EE37624417B8DC0F0027EAE8 /* FirstViewController.m */,
-				EE37624517B8DC0F0027EAE8 /* FirstViewController.xib */,
 			);
 			path = TestSqlite;
 			sourceTree = "<group>";
@@ -111,12 +111,12 @@
 			children = (
 				EE37624C17B8DDDE0027EAE8 /* testgiu.db */,
 				EE37622817B8DB390027EAE8 /* TestSqlite-Info.plist */,
-				EE37622917B8DB390027EAE8 /* InfoPlist.strings */,
 				EE37622C17B8DB390027EAE8 /* main.m */,
 				EE37622E17B8DB390027EAE8 /* TestSqlite-Prefix.pch */,
 				EE37623217B8DB3A0027EAE8 /* Default.png */,
 				EE37623417B8DB3A0027EAE8 /* Default@2x.png */,
 				EE37623617B8DB3A0027EAE8 /* Default-568h@2x.png */,
+				EEEA617417B9364A0016DE4E /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -130,6 +130,17 @@
 				EE37624F17B8DE1F0027EAE8 /* Utente.m */,
 			);
 			name = DB;
+			sourceTree = "<group>";
+		};
+		EEEA616117B91D9B0016DE4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE37624317B8DC0F0027EAE8 /* FirstViewController.h */,
+				EE37624417B8DC0F0027EAE8 /* FirstViewController.m */,
+				EEEA616317B91DCD0016DE4E /* FormInsertUtenteViewController.h */,
+				EEEA616417B91DCD0016DE4E /* FormInsertUtenteViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				it,
 			);
 			mainGroup = EE37621117B8DB390027EAE8;
 			productRefGroup = EE37621D17B8DB390027EAE8 /* Products */;
@@ -183,12 +195,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE37622B17B8DB390027EAE8 /* InfoPlist.strings in Resources */,
 				EE37623317B8DB3A0027EAE8 /* Default.png in Resources */,
 				EE37623517B8DB3A0027EAE8 /* Default@2x.png in Resources */,
 				EE37623717B8DB3A0027EAE8 /* Default-568h@2x.png in Resources */,
-				EE37624717B8DC0F0027EAE8 /* FirstViewController.xib in Resources */,
 				EE37624D17B8DDDE0027EAE8 /* testgiu.db in Resources */,
+				EEEA617217B9364A0016DE4E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,18 +215,20 @@
 				EE37624617B8DC0F0027EAE8 /* FirstViewController.m in Sources */,
 				EE37624B17B8DD820027EAE8 /* DBAccess.m in Sources */,
 				EE37625017B8DE200027EAE8 /* Utente.m in Sources */,
+				EEEA616517B91DCD0016DE4E /* FormInsertUtenteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EE37622917B8DB390027EAE8 /* InfoPlist.strings */ = {
+		EEEA617417B9364A0016DE4E /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EE37622A17B8DB390027EAE8 /* en */,
+				EEEA617317B9364A0016DE4E /* en */,
+				EEEA617517B936520016DE4E /* it */,
 			);
-			name = InfoPlist.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -314,6 +327,7 @@
 				EE37624217B8DB3A0027EAE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

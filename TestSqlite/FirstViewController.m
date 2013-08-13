@@ -27,18 +27,59 @@
 
 - (void)createLayout
 {
+    //UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonItemStyleDone target:self action:@selector(goToFormInsert)];
+    UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithTitle:@"Go insert" style:UIBarButtonItemStyleBordered target:self action:@selector(goToFormInsert)];
+  //  item.title = @"Go insert";
+   
+    self.navigationItem.rightBarButtonItem = item;
     
+    CGRect frame = CGRectMake(100, 100, 200, 50);
     
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 50)];
-    label.text = @"test";
+    UILabel *label = [[UILabel alloc]initWithFrame:frame];
+  //  label.text = @"test";
+  label.text = NSLocalizedString(@"test", nil);
     [self.view addSubview:label];
     
+    frame.origin.y += 100;
+    
     UIButton *selectUtenti = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    selectUtenti.frame = CGRectMake(100, 200, 100, 50);
-    [selectUtenti setTitle:@"Utenti" forState:UIControlStateNormal]  ;
+    selectUtenti.frame = frame;
+    [selectUtenti setTitle:@"Utenti" forState:UIControlStateNormal];
     [selectUtenti addTarget:self action:@selector(utentiFromModelUtente) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:selectUtenti];
     
+    frame.origin.y += 100;
+    UIButton *updateUtenti = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    updateUtenti.frame = frame;
+    [updateUtenti setTitle:@"Update" forState:UIControlStateNormal];
+    [updateUtenti addTarget:self action:@selector(updateUtenti) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:updateUtenti];
+}
+
+- (void) goToFormInsert
+{
+    NSLog(@"%s", __FUNCTION__);
+    
+    FormInsertUtenteViewController *formInsert = [[FormInsertUtenteViewController alloc]init];
+    [self.navigationController pushViewController:formInsert animated:true];
+}
+
+-(void) updateUtenti
+{
+    NSLog(@"%s", __FUNCTION__);
+    
+    DBAccess *dbAccess = [[DBAccess alloc]init];
+    
+    if([dbAccess updateNameUtente:@"pippo" widthID:1])
+    {
+        NSLog(@"UPDATE OK");
+    }
+    else
+    {
+        NSLog(@"UPDATE ERROR");
+    }
+    
+    [dbAccess closeDatabase];
 }
 
 - (NSMutableArray*) utentiFromModelUtente
@@ -58,7 +99,7 @@
         NSLog(@" ");
     }
     
-    
+    [dbAccess closeDatabase];
     
     return utenti;
 }

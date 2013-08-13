@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "DBAccess.h"
 #import "Utente.h"
+#import "FormInsertUtenteViewController.h"
 
 @interface FirstViewController : UIViewController
 
 - (void) createLayout;
 - (NSMutableArray*) utentiFromModelUtente;
+- (void) updateUtenti;
+- (void) goToFormInsert;
 @end
