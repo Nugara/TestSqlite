@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2C0DAA1A-1C6C-44AE-8D66-81CA455E37DA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TestSqlite</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9A933F26-82AD-4F42-8C52-157124DD2E51</key>
+		<string>https://github.com/Nugara/TestSqlite.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TestSqlite.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9A933F26-82AD-4F42-8C52-157124DD2E51</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Nugara/TestSqlite.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9A933F26-82AD-4F42-8C52-157124DD2E51</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9A933F26-82AD-4F42-8C52-157124DD2E51</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TestSqlite</string>
+		</dict>
+	</array>
+</dict>
+</plist>

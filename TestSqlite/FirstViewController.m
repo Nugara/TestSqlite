@@ -27,6 +27,8 @@
 
 - (void)createLayout
 {
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     //UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonItemStyleDone target:self action:@selector(goToFormInsert)];
     UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithTitle:@"Go insert" style:UIBarButtonItemStyleBordered target:self action:@selector(goToFormInsert)];
   //  item.title = @"Go insert";

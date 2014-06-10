@@ -12,6 +12,7 @@
 
 // Reference to the SQLite database.
 sqlite3* database;
+static NSString *nameDB = @"testgiu.db";
 
 -(id) init
 {
@@ -24,16 +25,47 @@ sqlite3* database;
     return self;
 }
 
+- (NSString *) pathDocumentsDirectory
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    return documentsDirectory;
+}
+
+- (void) checkDatabase
+{
+    NSString *pathDocument = [self pathDocumentsDirectory];
+    NSString *pathDB = [pathDocument stringByAppendingPathComponent:nameDB];
+    
+    NSFileManager *manager = [NSFileManager defaultManager];
+    
+    if([manager fileExistsAtPath:pathDB])
+    {
+        NSLog(@"EXIST");
+    }
+    else
+    {
+        NSString *path = [[NSBundle mainBundle]
+                          pathForResource:@"testgiu"
+                          ofType:@"db"];
+        
+        [manager copyItemAtPath:path toPath:pathDB error:nil];
+    }
+}
+
 // Open the database connection
 - (void)initializeDatabase {
     
     // Get the database from the application bundle.
-    NSString *path = [[NSBundle mainBundle]
-                      pathForResource:@"testgiu"
-                      ofType:@"db"];
+    
+    
+    [self checkDatabase];
+    
+    NSString *pathDocument = [self pathDocumentsDirectory];
+    NSString *pathDB = [pathDocument stringByAppendingPathComponent:nameDB];
     
     // Open the database.
-    if (sqlite3_open([path UTF8String], &database) == SQLITE_OK)
+    if (sqlite3_open([pathDB UTF8String], &database) == SQLITE_OK)
     {
         NSLog(@"Opening Database");
     }
